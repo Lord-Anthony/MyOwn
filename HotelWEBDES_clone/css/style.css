@@ -1,0 +1,110 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;  
+}
+body{
+  background-color: f1fbff;
+}
+.bg-body{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.navbar-nav{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-link{
+  margin-left: 25px;
+  text-decoration: none;
+  position: relative;
+  color: #333; /* Set your desired text color */
+  transition: color 0.3s ease-in-out;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Set your desired underline height */
+  bottom: 0;
+  left: 0;
+  background-color: #e70505; /* Set your desired underline color */
+  transition: width 0.3s ease-in-out;
+}
+a:hover::before {
+  width: 100%;
+}
+.nav-butt{
+  background-color: rgb(232, 232, 232);
+  border: none;
+  margin-left: 20px;
+  text-decoration: none;
+  position: relative;
+  color: #333; /* Set your desired text color */
+  transition: color 0.3s ease-in-out;
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: rgb(229, 91, 17);
+  height: 50px;
+}
+
+.carousel-item{
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-caption{
+  text-align: left;
+  padding-bottom: 300px;
+  
+}
+.carousel-caption P{
+  color: white;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+.carousel-caption H2{
+  color: white;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.hover-text-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  
+}
+.arrow-circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ea0b0b; /* Border color */
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust the margin as needed */
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease; /* Smooth transition for the movement */
+}
+
+.arrow-circle::before {
+  content: '>'; /* Add the ">" symbol */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000; /* Text color */
+}
+
+.hover-text-container:hover .arrow-circle {
+  margin-left: 20px; /* Adjust the final margin as needed */
+}
+
+.w-100{
+  filter: brightness(.7);
+}
