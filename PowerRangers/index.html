@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <script defer src="js/bootstrap.bundle.min.js"></script>
+
+  
+
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <img src="img/1.png" alt="" onclick="toggleActive(this)">
+      </div>
+      <div class="col">
+        <img src="img/2.png" alt="" onclick="toggleActive(this)">
+      </div>
+      <div class="col">
+        <img src="img/3.png" alt="" onclick="toggleActive(this)">
+      </div>
+      <div class="col">
+        <img src="img/4.png" alt="" onclick="toggleActive(this)">
+      </div>
+      <div class="col">
+        <img src="img/5.png" alt="" onclick="toggleActive(this)">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleActive(clickedImage) {
+      var allImages = document.querySelectorAll('.row .col img');
+
+      allImages.forEach(function(image) {
+        image.classList.remove('active');
+      });
+      
+      clickedImage.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
